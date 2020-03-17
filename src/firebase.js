@@ -1,5 +1,7 @@
+  import firebase from 'firebase/app';
+  import 'firebase/firestore';
   // Your web app's Firebase configuration
-  var firebaseConfig = {
+  const firebaseConfig = firebase.initializeApp ({
     apiKey: "AIzaSyA2pn-i5hOI-H2UamNZhC5cnyXapKuCyUQ",
     authDomain: "revision-project-manager.firebaseapp.com",
     databaseURL: "https://revision-project-manager.firebaseio.com",
@@ -8,7 +10,6 @@
     messagingSenderId: "878065775503",
     appId: "1:878065775503:web:05d8910c3c52e27879d1fa",
     measurementId: "G-3CCJ2XK5PS"
-  };
+  });
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+export {firebaseConfig as firebase};

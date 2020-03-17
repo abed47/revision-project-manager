@@ -19,7 +19,7 @@ export const Sidebar = () => {
                 </li>
             </ul>
             <div className="sidebar_middle">
-                <spna><FaChevronDown/></spna>
+                <span><FaChevronDown/></span>
                 <h2>Projects</h2>
             </div>
             <ul className="sidebar_projects">

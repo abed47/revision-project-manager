@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
-import { UseProjectsValue, UseSelectedProjectsValue} from '../context';
+import { UseProjectsValue, useSelectedProjectValue} from '../context';
 import { firebase } from '../firebase';
 
 export const IndividualProject = ({project}) => {
     const [showConfirm, setShowConfirm] = useState(false);
     const { projects, setProjects } = UseProjectsValue();
-    const { setSelectedProjects } = UseSelectedProjectsValue();
+    const { setSelectedProjects } = useSelectedProjectValue();
 
     const deleteProject = docId => {
         firebase
